@@ -1,0 +1,115 @@
+:root{
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+
+/* start main classes */
+.fs1
+{
+    font-size: 3.5rem;
+}
+.extraLine
+{
+    line-height: 4.25rem;
+}
+.h300
+{
+    height: 300px;
+}
+.text-justify
+{
+    text-align: justify
+}
+/* end main classes */
+.landing
+{
+    background-image: url(/imags/1.png);
+    background-size: cover;
+    min-height: calc(100vh - 1px);
+}
+
+
+/* start section 3 */
+.main-blockquote
+{
+    border-inline-end:.25rem solid #6750a4;
+    border-inline-start: none;
+}
+/* end section 3 */
+
+/* start section 4 */
+.section-4
+{
+    background-image: url(/imags/img-6.png);
+    background-size: cover;
+    min-height: calc(100vh - 75px);
+
+}
+.section-4 .sha
+{
+    width: 100%;
+    min-height: calc(100vh - 75px);
+
+}
+/* end section 4 */
+/* start footer */
+.footer {
+    background-color: var(--dark-color);
+}
+.footer .copyright > span{
+    color: var(--green-color);
+}
+.footer .copyright div span{
+    color: var(--yellow-color);
+}
+.footer .facebook{
+    background-color: #1877f2;
+}
+.footer .x{
+    background-color: #14171a;
+}
+.footer .linkedin{
+    background-color: #004182;
+}   
+.footer .instagram{
+    background-color: #c13584;
+}
+/* end footer */
+
+/* start section 7 */
+.section-7 h1
+{
+    background-color: #ffff00;
+    color: #0563c1;
+}
+/* end section 7 */
+
+
+/* start home page */
+
+/* start slider */
+.slider-images
+{
+    min-height: calc(100vh - 7px);
+}
+.slider-button
+{
+    block-size: auto;
+}
+/* end slider */
+
+/* start map section */
+
+.leaflet-container {
+    height: 400px;
+    width: 600px;
+    max-width: 100%;
+    max-height: 100%;
+}
+/* end map section */
+
+
+/* end home page */
