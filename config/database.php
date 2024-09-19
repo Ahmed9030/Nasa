@@ -48,8 +48,8 @@ return [
             'url' => env('DATABASE_URL'),
             'host' => '127.0.0.1',
             'port' => env('DB_PORT', '3306'),
-            'database' => 'nasa.000.pe is currently unable to handle this request.
-            HTTP ERROR 500',
+            'database' => 'nasa',
+            'HTTP ERROR 500',
             'username' => 'root',
             'password' =>  '',
             'unix_socket' => env('DB_SOCKET', ''),

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class postsController extends Controller
@@ -12,7 +13,8 @@ class postsController extends Controller
      */
     public function index()
     {
-        return view('index')->with('posts' , Post::all());
+        $categories = Category::all();
+        return view('index')->with(['posts' => Post::all() ,'categories' => $categories ]);
     }
     /**
      * Show the form for creating a new resource.
@@ -35,7 +37,8 @@ class postsController extends Controller
      */
     public function show(Post $post)
     {
-        return view('post')->with('post' , $post);
+        $category = Category::where('id' ,$post->category_id)->first();
+        return view('post' , compact('post' , 'category'));
     }
 
     /**

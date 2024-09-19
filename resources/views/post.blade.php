@@ -13,7 +13,9 @@
     <div class="container text-center blur rounded p-3">
         <h1>{{$post->title}}</h1>
         <p class="fs-6 text-black-50 mb-5">{{$post->excerpt}}</p>
+        <a href="{{route('category.show' , $category->id)}}"><p class="fw-bold">📂 {{$category->name}}</p></a>
         <a href="#go"><button>Let's see the danger 👇</button></a>
+
     </div>
    </div>
   <!-- end landing -->
