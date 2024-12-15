@@ -19,6 +19,10 @@ class postsController extends Controller
     /**
      * Show the form for creating a new resource.
      */
+    public function maps()
+    {
+        return view('maps')->with(['posts' => Post::all()]);
+    }
     public function create()
     {
         //

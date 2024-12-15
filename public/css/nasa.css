@@ -118,15 +118,6 @@ body {
 }
 /* end slider */
 
-/* start map section */
-
-.leaflet-container {
-    height: 400px;
-    width: 600px;
-    max-width: 100%;
-    max-height: 100%;
-}
-/* end map section */
 
 
 /* end home page */
@@ -278,8 +269,8 @@ body {
     }
   }
 
-  nav {
-    position: fixed;
+  /* nav { */
+    /* position: fixed;
     left: 0;
     top: 0;
     right: 0;
@@ -288,8 +279,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px 36px;
-    font-weight: 500;
-    svg {
+    font-weight: 500; */
+    /* svg {
       width: 20px;
       height: 20px;
     }
@@ -324,7 +315,7 @@ body {
         }
       }
     }
-  }
+  } */
   .indicator {
     position: fixed;
     left: 0;

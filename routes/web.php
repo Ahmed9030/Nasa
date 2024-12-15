@@ -41,3 +41,6 @@ Route::get("/categories" , [categoryController::class , 'index'])->name('categor
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+//map routing
+Route::get('/maps' , [PostsController::class , 'maps'])->name('maps');
