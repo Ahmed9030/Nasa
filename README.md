@@ -1,13 +1,12 @@
 # 🌍 Climate Change Interactive Map
 
-![Climate Impact Banner](https://images.unsplash.com/photo-1611273426721-c21d65451991?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)
+![NASA Climate Mission Banner](https://images-assets.nasa.gov/image/ISS064-E-28944/ISS064-E-28944~large.jpg)
 
 <div align="center">
 
 [![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
-[![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 
 **An interactive platform for visualizing climate change impacts globally, based on curated scientific research.**
 
@@ -26,7 +25,6 @@
 - [Usage](#-usage)
 - [Configuration](#-configuration)
 - [Contributing](#-contributing)
-- [License](#-license)
 
 ---
 
