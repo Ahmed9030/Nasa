@@ -110,3 +110,42 @@ To start the application, you need to run both the Laravel server and the Vite d
 **Step 1: Start the Laravel Server**
 ```bash
 php artisan serve
+
+**Step 2: Start Vite Dev Server** (In a new terminal)
+```bash
+npm run dev
+
+The application will be accessible at http://localhost:8000.
+
+---
+
+🔧 Configuration
+The project uses Vite for asset bundling. If you are deploying to production, make sure to run the build command:
+
+```bash
+npm run build
+
+The configuration for Tailwind CSS and Autoprefixer can be found in tailwind.config.js and postcss.config.js.
+
+---
+
+🤝 Contributing
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create.
+
+Fork the Project.
+
+Create your Feature Branch (git checkout -b feature/AmazingFeature).
+
+Commit your Changes (git commit -m 'Add some AmazingFeature').
+
+Push to the Branch (git push origin feature/AmazingFeature).
+
+Open a Pull Request.
+
+---
+
+<div align="center">
+
+Developed with ❤️ for a Greener Planet by Ahmed9030
+
+</div>
