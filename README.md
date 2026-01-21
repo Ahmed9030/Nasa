@@ -44,4 +44,69 @@ The application features an interactive world map where affected regions are hig
 - 🔴 **Visual Indicators:** Dynamic red circles that visually quantify the scale of environmental impact.
 - 📄 **Deep-Dive Details:** Clicking a hotspot reveals a concise summary and a direct link to comprehensive research pages.
 - 🎨 **Modern UI/UX:** Built with **Tailwind CSS** for a clean, responsive, and mobile-friendly interface.
--
+- ⚡ **High Performance:** Powered by **Vite** for ultra-fast asset loading and real-time interactions.
+- 🔍 **Data-Driven:** Every data point is backed by processed scientific research.
+
+---
+
+## 📚 Data & Methodology
+
+This project stands out by its unique approach to data:
+1.  **Manual Processing:** We collect raw data from scientific journals and climate reports.
+2.  **Analysis:** Complex environmental data is simplified into coordinate-based mapping points.
+3.  **Accuracy:** Each point on the map is cross-referenced with verified research papers rather than generic API feeds.
+
+---
+
+## 🛠 Requirements
+
+To run this project locally, ensure you have the following installed:
+
+* **PHP** (v8.1 or higher)
+* **Composer** (PHP Package Manager)
+* **Node.js** & **NPM** (v18.x or higher recommended)
+* **Database:** MySQL, PostgreSQL, or SQLite
+
+---
+
+## ⚙️ Installation
+
+Follow these steps to set up the project on your local machine:
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone [https://github.com/Ahmed9030/Nasa.git](https://github.com/Ahmed9030/Nasa.git)
+    cd Nasa
+    ```
+
+2.  **Install Backend Dependencies:**
+    ```bash
+    composer install
+    ```
+
+3.  **Install Frontend Dependencies:**
+    ```bash
+    npm install
+    ```
+
+4.  **Environment Setup:**
+    ```bash
+    cp .env.example .env
+    php artisan key:generate
+    ```
+    *Note: Configure your database credentials in the `.env` file.*
+
+5.  **Run Migrations (if applicable):**
+    ```bash
+    php artisan migrate
+    ```
+
+---
+
+## 🚀 Usage
+
+To start the application, you need to run both the Laravel server and the Vite development server:
+
+**Step 1: Start the Laravel Server**
+```bash
+php artisan serve
