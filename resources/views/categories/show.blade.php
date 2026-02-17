@@ -20,7 +20,7 @@
         </div>
     </div>
 
-    {{-- start show posts  --}}
+    {{-- start show posts --}}
     <div class="container mx-auto pt-5 pb-5" id="posts">
         <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
             @foreach ($category->posts as $post)
@@ -28,20 +28,20 @@
                     <div class="s6 h-48">
                         <img class="rounded-t-lg w-full h-full object-cover" src="{{ Voyager::image($post->image) }}">
                     </div>
-                    <div class="bg-gray-50 p-3 flex-grow">
-                        <div class="h-10">
-                            <h5 class="text-2xl text-gray-900 font-bold">{{ $post->title }}</h5>
-                            <p class="line-clamp-2 text-gray-700">{{ $post->excerpt }}</p>
+                    <div class="bg-gray-50 p-3 flex-grow flex flex-col justify-between rounded-b-lg">
+                        <div class="min-h-24">
+                            <h5 class="text-2xl text-gray-900 font-bold mb-2">{{ $post->title }}</h5>
+                            <p class="line-clamp-3 text-gray-700">{{ $post->excerpt }}</p>
                         </div>
 
-                        <div class="relative bottom-[-30px]">
+                        <div class="mt-4">
                             <a href="{{ route('post.show', $post->id) }}"
-                                class="inline-flex items-center px-3 py-2 mt-3 text-sm font-medium text-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-md">
-                                <button>Open Post</button>
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-md">
+                                Open Post
                                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M1 5h12m0 0L9 1m4 4L9 9" />
                                 </svg>
                             </a>
                         </div>
@@ -51,7 +51,7 @@
         </div>
     </div>
 
-    {{-- end show posts  --}}
+    {{-- end show posts --}}
 
     {{-- map section --}}
     <div class="container mx-auto pt-5 pb-5 " id="map-content">
@@ -81,9 +81,9 @@
                 fillColor: '#f03',
                 fillOpacity: 0.5,
                 radius: {{ $post->circle_size }}
-            }).addTo(map).bindPopup(
-                '<h3>{{ $post->title }}</h3> <br> {{ $post->excerpt }} <a href="{{ route('post.show', $post->id) }}"><button> More Info 🔭</button></a>'
-            );
+                    }).addTo(map).bindPopup(
+                    '<h3>{{ $post->title }}</h3> <br> {{ $post->excerpt }} <a href="{{ route('post.show', $post->id) }}"><button> More Info 🔭</button></a>'
+                );
         </script>
     @endforeach
 
