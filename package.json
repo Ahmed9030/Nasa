@@ -3,7 +3,7 @@
     "type": "module",
     "scripts": {
         "dev": "concurrently \"vite\" \"php artisan serve --port=8001\"",
-        "build": "vite build"
+        "build": "vite build --emptyOutDir"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.20",
