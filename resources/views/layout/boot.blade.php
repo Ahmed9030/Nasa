@@ -8,8 +8,7 @@
     <link
         rel="shortcut icon"
         type="image/x-icon"
-        href="{{ setting('site.logo') ? Voyager::image(setting('site.logo')) : asset('imags/NASA_logo.png') }}"
-    />
+    href="{{ setting('site.logo') ? Voyager::image(setting('site.logo')) : asset('imgs/NASA_logo.png') }}"    />
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/nasa.css') }}">
