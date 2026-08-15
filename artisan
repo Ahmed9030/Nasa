@@ -5,6 +5,19 @@ define('LARAVEL_START', microtime(true));
 
 /*
 |--------------------------------------------------------------------------
+| Suppress PHP 8.5 Vendor Deprecations
+|--------------------------------------------------------------------------
+|
+| Vendor packages (Carbon, Laravel helpers) still target older PHP versions
+| and emit "Deprecated" notices on PHP 8.5. Silence them here so CLI output
+| stays readable; Laravel routes deprecations to the configured log channel.
+|
+*/
+error_reporting(E_ALL & ~E_DEPRECATED & ~E_USER_DEPRECATED);
+ini_set('display_errors', '0');
+
+/*
+|--------------------------------------------------------------------------
 | Register The Auto Loader
 |--------------------------------------------------------------------------
 |
@@ -16,6 +29,20 @@ define('LARAVEL_START', microtime(true));
 */
 
 require __DIR__.'/vendor/autoload.php';
+
+/*
+|--------------------------------------------------------------------------
+| Pre-load Laravel logging classes
+|--------------------------------------------------------------------------
+|
+| When the first deprecation is reported, Laravel builds its logger from
+| *inside* the error handler. Loading the logging classes here, while the
+| deprecation filter above is still active, prevents that in-handler class
+| load from emitting a further "Deprecated" notice on the console.
+|
+*/
+class_exists(\Illuminate\Log\LogManager::class);
+class_exists(\Illuminate\Log\Logger::class);
 
 $app = require_once __DIR__.'/bootstrap/app.php';
 

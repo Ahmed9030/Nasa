@@ -7,6 +7,20 @@ define('LARAVEL_START', microtime(true));
 
 /*
 |--------------------------------------------------------------------------
+| Suppress PHP 8.5 Vendor Deprecations
+|--------------------------------------------------------------------------
+|
+| Composer's autoloader loads vendor files (Laravel helpers, Carbon, ...)
+| before the framework bootstraps its own error handler. On PHP 8.5 these
+| emit "Deprecated" notices that would be rendered into the HTML output.
+| Suppress deprecations here so nothing leaks onto the page.
+|
+*/
+error_reporting(E_ALL & ~E_DEPRECATED & ~E_USER_DEPRECATED);
+ini_set('display_errors', 'Off');
+
+/*
+|--------------------------------------------------------------------------
 | Check If The Application Is Under Maintenance
 |--------------------------------------------------------------------------
 |

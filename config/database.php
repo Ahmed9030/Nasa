@@ -49,9 +49,8 @@ return [
             'host' => '127.0.0.1',
             'port' => env('DB_PORT', '3306'),
             'database' => 'nasa',
-            'HTTP ERROR 500',
             'username' => 'root',
-            'password' =>  '',
+            'password' => '',
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
@@ -60,7 +59,9 @@ return [
             'strict' => true,
             'engine' => null,
             'options' => extension_loaded('pdo_mysql') ? array_filter([
-                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+                // PDO::MYSQL_ATTR_SSL_CA is deprecated since PHP 8.5; use the
+                // namespaced Pdo\Mysql class constant when available instead.
+                class_exists(\Pdo\Mysql::class) ? \Pdo\Mysql::ATTR_SSL_CA : \PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
             ]) : [],
         ],
 

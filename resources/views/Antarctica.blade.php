@@ -1,6 +1,6 @@
-@extends('layout.boot-bree')
+@extends('layout.boot')
 
-@section('title' , "Antarctica")
+@section('title', "Antarctica")
 
 
 @section('content')
@@ -18,7 +18,7 @@
   <!-- start section 1 -->
   <div class="section-1 mt-5 mb-3 pb-5 pt-5" id="go">
   <div class="container">
-    <h1 class="text-center pb-3">Liquid AntarcticaLiquid Antarctica</h1>
+    <h1 class="text-center pb-3">Liquid Antarctica</h1>
       <div class="row gap-0">
           <div class="col-lg-6">
             <p class="text-center text-md-start lh-lg pb-3">
@@ -29,11 +29,11 @@
             </p>
           </div>
           <div class="img col-lg-6">
-            <img src="imags/section_1.png" alt="" class="img-fluid shadow" >
+            <img src="{{ asset('imags/section_1.png') }}" alt="Antarctic melt days map" class="img-fluid shadow">
           </div>
 
           <div class="img col-lg-6">
-            <img src="imags/section_2.png" alt="" class="img-fluid shadow" >
+            <img src="{{ asset('imags/section_2.png') }}" alt="Antarctic temperature and pressure departure" class="img-fluid shadow">
           </div>
 
             <div class="col-lg-6">
@@ -55,7 +55,7 @@
     <div class="row">
 
       <div class="col-lg-12 d-flex justify-content-center">
-        <img src="imags/img-3.png" alt="" class="img-fluid ">
+        <img src="{{ asset('imags/img-3.png') }}" alt="Antarctic surface mass balance graph" class="img-fluid">
       </div>
     <div class="col-lg-12">
       <p class="text-md-start lh-lg text-center">Figure 3. This graphs shows surface mass balance (SMB) trends as a total mass snow and rain input
@@ -74,7 +74,7 @@
       <div class="row gap-0 ">
 
         <div class="col-lg-6">
-          <img src="imags/img-4.png" alt="" class="img-fluid shadow">
+          <img src="{{ asset('imags/img-4.png') }}" alt="MODIS satellite image of Antarctic melt ponds" class="img-fluid shadow">
         </div>
 
         <div class="col-lg-6 mt-3 align-self-end">
@@ -94,7 +94,7 @@
           </blockquote>
         </div>
         <div class="col-lg-6">
-          <img src="imags/img-5.png" alt="" class="img-fluid shadow">
+          <img src="{{ asset('imags/img-5.png') }}" alt="High-melt days plot from MAR3.12 model" class="img-fluid shadow">
         </div>
 
       </div>
@@ -139,7 +139,7 @@
       </div>
 
       <div class="col-lg-6 ">
-        <img src="/imags/1.png" alt="" class="img-fluid">
+        <img src="{{ asset('imags/1.png') }}" alt="Under-ice sonar mapping illustration" class="img-fluid">
       </div>
     </div>
    </div>
@@ -153,7 +153,7 @@
     <div class="row gap-0">
 
       <div class="col-lg-6">
-        <img src="/imags/img-7.png" alt="" class="img-fluid">
+        <img src="{{ asset('imags/img-7.png') }}" alt="Multibeam sonar base map of Dotson Ice Shelf" class="img-fluid">
       </div>
 
       <div class="col-lg-6">
@@ -204,7 +204,7 @@
           </div>
 
           <div class="col-lg-6 pt-3">
-            <img src="imags/img-8.png" alt="" class="img-fluid shadow">
+            <img src="{{ asset('imags/img-8.png') }}" alt="Arctic sea ice maximum chart" class="img-fluid shadow">
             <p class="fw-light text-justify">The Arctic Ocean sea ice reached its annual maximum on March 14, continuing the long-term decline in ice at the poles.
               Chart by Lauren Dauphin/NASA Earth Observatory, using data from the National Snow and Ice Data Center</p>
           </div>
