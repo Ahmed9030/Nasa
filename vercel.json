@@ -14,12 +14,16 @@
             "dest": "/build/$1"
         },
         {
-            "src": "/build/assets/(.*)",
-            "dest": "/build/assets/$1"
+            "src": "/storage/(.*)",
+            "dest": "/storage/$1"
         },
         {
-            "src": "/(css|js|images|storage)/(.*)",
-            "dest": "/$1/$2"
+            "src": "/imgs/(.*)",
+            "dest": "/imgs/$1"
+        },
+        {
+            "src": "/images/(.*)",
+            "dest": "/images/$1"
         },
         {
             "src": "/(.*)",
