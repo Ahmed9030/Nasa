@@ -29,12 +29,15 @@
         }).addTo(map);
 
         let content = `<h3>Antarctica</h3> <a href='{{ route('antar') }}'><button> More Info</button></a>`
-        const circle0 = L.circle([-73.07740507503578, 0.23950987850670913], {
+       
+        if (typeof circle0 === 'undefined') {
+             var circle0 = L.circle([-73.07740507503578, 0.23950987850670913], {
             color: '#10b981',
             fillColor: '#10b981',
             fillOpacity: 0.4,
             radius: 500000
         }).addTo(map).bindPopup(content);
+        }
     </script>
 
     {{-- show the posts on map --}}
