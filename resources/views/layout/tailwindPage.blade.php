@@ -11,7 +11,7 @@
     type="image/x-icon"
     href="{{ setting('site.logo') ? Voyager::image(setting('site.logo')) : asset('imags/NASA_logo.png') }}"
   />
-  @vite('resources/css/app.css')
+  @vite(['resources/css/app.css', 'resources/js/app.js'])
   <link rel="stylesheet" href="{{ asset('css/nasa.css') }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
